@@ -3,10 +3,22 @@
 
 #include "fujinetbridge.h"
 
+void write_helpmsg() {
+    printf("usage: fujinetbridge [device]\n");
+}
+
 void write_startmsg()
 {
-    printf("Fujinet Bridge FNB_VERSION \n");
+    printf("Fujinet Bridge %.2f\n\n",FNB_VERSION);
 }
+
+/**
+ * @brief Main: process parameters and starts (obiously)
+ * 
+ * @param argc 
+ * @param argv 
+ * @return int 
+ */
 
 int main(int argc, char** argv)
 {
@@ -17,8 +29,9 @@ int main(int argc, char** argv)
         exit(0);
     } 
     else {
-        *midi_dev=argv[1];
-        printf("%s",midi_dev);
+       //printf("%s",argv[1]);
+        
+        printf("%s \n\n",argv[1]);
     } 
 
     return 0;
