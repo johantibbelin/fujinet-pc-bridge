@@ -11,4 +11,10 @@
 #ifndef NETMIDI_H
 #define NETMIDI_H
 
+#include <stdint.h>
+/*  Functions */
+
+void midi_sendbyte(uint8_t sbyte);
+uint8_t midi_recivebyte();
+
 #endif /* NETMIDI_H */

@@ -8,7 +8,14 @@
  * @copyright Copyright (c) 2023
  * 
  */
-#ifndef NETMIDI_H
-#define NETMIDI_H
+#include <stdint.h>
 
-#endif /* NETMIDI_H */
+void midi_sendbyte(uint8_t sbyte) {
+
+}
+
+uint8_t midi_recivebyte() {
+
+    uint8_t b;
+    return b;
+}
