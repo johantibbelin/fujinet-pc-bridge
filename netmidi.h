@@ -12,9 +12,18 @@
 #define NETMIDI_H
 
 #include <stdint.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <stdio.h>
+
 /*  Functions */
+extern char mididev[];
 
 void midi_sendbyte(uint8_t sbyte);
 uint8_t midi_recivebyte();
+
+int midi_setup();
+
+int midi_close();
 
 #endif /* NETMIDI_H */
