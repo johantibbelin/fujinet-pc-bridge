@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 #include "fujinetbridge.h"
+#include "midibridge.h"
 
 void write_helpmsg() {
     printf("usage: fujinetbridge [device]\n");
@@ -29,10 +30,10 @@ int main(int argc, char** argv)
         exit(0);
     } 
     else {
-       //printf("%s",argv[1]);
+       
         
         printf("%s \n\n",argv[1]);
     } 
-
+    start_midibridge();
     return 0;
 }
