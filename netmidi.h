@@ -16,6 +16,12 @@
 #include <unistd.h>
 #include <stdio.h>
 
+#ifdef __APPLE__
+/* Core MIDI */
+#include <CoreMIDI/CoreMIDI.h>
+
+#endif /* __APPLE__ */
+
 /*  Functions */
 extern char mididev[];
 
