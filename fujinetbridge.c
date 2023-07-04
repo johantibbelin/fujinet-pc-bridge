@@ -27,7 +27,7 @@ int main(int argc, char** argv)
     write_startmsg();
     if (argc !=2) {
         write_helpmsg();
-        exit(0);
+        exit(EXIT_SUCCESS);
     } 
     else {
        

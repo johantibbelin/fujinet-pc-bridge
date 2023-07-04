@@ -39,6 +39,14 @@ int midi_close() {
     else
         return -1;
 }
+int midi_devlist() {
+    #ifdef __APPLE__
+    return core_midi_devlist();
+    #else
+    return 0;
+    #endif /* __APPLE__ */
+
+}
 
 #ifdef __APPLE__
 
@@ -52,6 +60,9 @@ void core_midi_sendbyte() {
 uint8_t core_midi_recivebyte() {
 
 }
+int core_midi_devlist() {
 
+    return 0;
+}
 
 #endif /* __APPLE__ */
