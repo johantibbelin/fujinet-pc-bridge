@@ -61,7 +61,7 @@ uint8_t core_midi_recivebyte() {
 
 }
 int core_midi_devlist() {
-
+    printf("Num of MIDI devices: %i\n",MIDIGetNumberOfDevices());
     return 0;
 }
 
