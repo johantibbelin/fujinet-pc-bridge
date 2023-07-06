@@ -7,3 +7,5 @@ OBJ_FILES = netsio.o midibridge.o
 all: 	$(OBJ_FILES)
 		$(CC) $(CFLAGS) $(OBJ_FILES) -o fujinetbridge
 
+clean:
+		rm -f $(OBJ_FILES) fujinetbridge
