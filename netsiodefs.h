@@ -1,6 +1,10 @@
 #ifndef NETSIODEFS_H
 #define NETSIODEFS_H
 
+#include <stdint.h>
+#include <sys/types.h>
+#include <unistd.h>
+
 /* UDP Defines */
 #define UDP_PORT 5000
 #define UDP_BUFFER_SIZE 1024
