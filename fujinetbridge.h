@@ -1,3 +1,4 @@
+/* Global defines */
 #ifndef FUJINETBRIDGE_H
 #define FUJINETBRIDGE_H
 
