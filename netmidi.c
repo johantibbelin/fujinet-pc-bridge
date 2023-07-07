@@ -47,6 +47,9 @@ int midi_devlist() {
     #endif /* __APPLE__ */
 
 }
+int midi_listconfig() {
+
+}
 
 #ifdef __APPLE__
 

@@ -33,4 +33,6 @@ int midi_setup();
 int midi_close();
 
 int midi_devlist();
+
+int midi_listconfig();
 #endif /* NETMIDI_H */
