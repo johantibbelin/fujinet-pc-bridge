@@ -62,6 +62,9 @@ uint8_t core_midi_recivebyte() {
 }
 int core_midi_devlist() {
     printf("Num of MIDI devices: %i\n",MIDIGetNumberOfDevices());
+    /* Add devices */
+    MIDISetupAddDevice("FN-Bridge In");
+    MIDISetupAddDevice("FN-Bridge Out");
     return 0;
 }
 
