@@ -53,7 +53,9 @@ int main(int argc, char** argv)
         exit(EXIT_SUCCESS);
     } 
     else {
-       
+        if (argv[1]="-testmidi") {
+            
+        }
         
         printf("%s \n\n",argv[1]);
     } 
