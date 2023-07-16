@@ -53,8 +53,19 @@ int midi_listconfig() {
 
 #ifdef __APPLE__
 
-int core_midi_setup() {
+OSStatus core_midi_setup() {
 
+MIDIClientRef midiClient;
+
+OSStatus result;
+    
+result = MIDIClientCreate(CFSTR("MIDI client"), NULL, NULL, &midiClient);
+if (result != noErr) {
+    NSLog("Error creating MIDI client: %s - %s",
+        GetMacOSStatusErrorString(result), 
+        GetMacOSStatusCommentString(result));
+        return result;
+}
 }
 void core_midi_sendbyte() {
 
