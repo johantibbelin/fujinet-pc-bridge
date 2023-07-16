@@ -26,5 +26,5 @@ int start_midibridge() {
  * @return int 
  */
 int test_midi() {
-
+    midi_devlist();
 }
